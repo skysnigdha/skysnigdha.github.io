@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GroupSense</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<div class="spotlight">
+				<div class="content">
+					<header class="major">
+						<h2>GroupSense: A Lightweight Framework for Group Identification</h2>
+					</header>
+					<p>
+						Publications by: <i><a href="https://skysnigdha.github.io/">Snigdha Das</a>, <a href="https://sites.google.com/view/sjitiit/home">Soumyajit Chatterjee</a>, <a href="https://cse.iitkgp.ac.in/~sandipc/">Sandip Chakraborty</a>, <a href="https://cse.iitkgp.ac.in/~bivasm/">Bivas Mitra</a></i><br>
+					
+						<b>GroupSense: A Lightweight Framework for Group Identification</b>
+						<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755" target="_blank">TMC'19</a>
+						[<a href="https://skysnigdha.github.io/papers/2019_TMC_GroupSense.pdf" target="_blank">Full Paper</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/8573866" target="_blank">IEEE</a>]
+						<br>
+						<b>An Unsupervised Model for Detecting Passively Encountering Groups from WiFi Signals</b>
+						<a href="https://globecom2018.ieee-globecom.org" target="_blank">GLOBECOM'18</a>
+						[<a href="https://skysnigdha.github.io/papers/2018_GlobeCom_PEG.pdf" target="_blank">Full Paper</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/8647751" target="_blank">IEEE</a>] [<a href="https://docs.google.com/presentation/d/1HPLCrX50tlT1NIym82Fuw7QRJSDYwuy4mhjfkKx0BgQ/edit?usp=sharing" target="_blank">Slides</a>]
+					</p>
+				</div>
+			</div>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#overview" class="active">Overview</a></li>
+					<li><a href="#challenges">Challenges</a></li>
+					<li><a href="#objective">Objective</a></li>
+					<li><a href="#solution">Proposed Solution: <i>GroupSense</i></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Introduction -->
+				<section id="overview" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Meeting Group</h2>
+							</header>
+							<img src="image/group.png" alt="" width="1000" height="200"/>
+							<br>
+							<p align="justify">In an organization, individuals prefer to form various formal and informal groups for mutual interactions. Therefore, ubiquitous identification of such groups and understanding their dynamics are important to monitor activities, behaviours and well-being of the individuals. Meeting groups are the groups where co-located group members occasionally interact with each other. Precisely, given a population of subjects U, we define a meeting group G[t,t+T] ⊆ U for the time period [t, t+T ] as the collection of co-located individuals {u ∈ U} sharing similar context.</p>
+							<img src="image/group.jpg" alt="" width="1000" height="400"/>
+						</div>
+						
+					</div>
+					<a href="#"><p align="right">Back</p></a>
+				</section>
+
+				<!-- First Section -->
+				<section id="challenges" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Challenges</h2>
+							</header>
+							<ul class="features">
+								<li>
+									<img src="image/colocation.jpg" alt="" width="350" height="250"/>
+									<h3>Colocation</h3>
+									<p align="justify">Identification of a location of the meeting group can be conceptualized as a <b>localization problem</b>. However, retrieving highly precise location information is challenging.</p>
+								</li>
+								<li>
+									<img src="image/context.jpg" alt="" width="250" height="250"/>
+									<h3>Context</h3>
+									<p align="justify">User list are not predefined in physical world group. Therefore, getting prior <b>context</b> of the users is challenging.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#"><p align="right">Back</p></a>
+				</section>
+
+				<!-- Second Section -->
+				<section id="objective" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Objective</h2>
+							</header>
+							<br>
+							<p align="justify">In this project, we develop a lightweight, yet near-accurate, methodology, called GroupSense, to identify various interacting groups based on collective sensing through users’ smartphones. </p>
+							
+							
+						</div><img src="image/dataCollectionFramework.jpg" alt="" width="500" height="350"/>
+						
+					</div>
+					<a href="#"><p align="right">Back</p></a>
+				</section>
+
+				<!-- Get Started -->
+				<section id="solution" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Proposed Solution: <i>GroupSense</i></h2>
+							</header>
+							<br>
+							<h4 align="justify">
+								<b>Primary Indicators:</b>
+							</h4>
+							<ul align="left">
+								<li>Overlapping <b>WiFi access points</b> exhibit similarity for subjects belonging to the same meeting group.</li>
+								<li>The subjects participating in the same group exhibit similar <b>audio signature</b>.</li>
+							</ul>
+						
+							
+							<img src="image/primaryIndicator.jpg" alt="" width="1000" height="300"/>
+							
+							<h4 align="justify">
+								<b>Observations:</b>
+							</h4>
+							<ul align="left">
+								<li><b>WiFi signal strength</b> is highly similar for subjects with same group as compared to the different group.</li>
+								<li>Due to <b>device heterogenity</b>, a wide variation in signal strength across smartphone models and devices present.</li>
+								<li>In <b>noisy environment</b>, the <b>frequency component</b> of the <b>audio signal</b> deviates even for the same group subjects.</li>
+								<li><b>Device heterogenity</b> exhibits more <b>audio amplitude</b> similarity for different group subjects than the same group subjects.</li>
+							</ul>
+
+							<h4 align="justify">
+								<b>Admitted Steps in <i>GroupSense</i> :</b>
+							</h4>
+							<ul align="left">
+								<li><b>Overlapping WiFi access points</b> are measured using Jaccard Coefficient to detect the proximity.</li>
+								<li><b>Gain factor</b> computed using <b>WiFi signal strength</b> is used to eliminate the <b>device heterogenity</b> effect.</li>
+								<li>Acknowledging the effect of <b>noisy environment</b> and <b>device herterogenity</b>, the <b>audio tone</b> of the subjects in the group are extracted by calculating <b>Complex Cepstrum</b>.</li>
+								<li><b>Weighted proximity-audio features</b> are computed and fed to the <b>WalkTrap community detection algorithm</b> for detect the <b>meeting groups</b>.</li>
+							</ul>
+
+							<h4 align="justify">
+								<b><i>GroupSense</i> Performance:</b>
+							</h4>
+							<ul align="left">
+								<li>The proposed method has been implemented and tested under many <b>real-life scenarios</b> in an academic institute environment.</li>
+								<li><b>GroupSense</b> can identify user groups with on an average <b>0.9(±0.14) F1-Score</b> even in a noisy environment.</li>
+							</ul>
+						</div>
+						
+					</div>
+					<a href="#"><p align="right">Back</p></a>
+				</section>
+
+			</div>
+		</div>
+	</body>
+</html>
